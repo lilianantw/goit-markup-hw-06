@@ -320,7 +320,7 @@ img {
 }
 /*HERO*/
 .solutions {
-  padding: 96px 0;
+  padding: 72px 0;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -330,7 +330,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100%;
+  max-width: 320px;
   margin: 0 auto;
 }
 @media and (-webkit-min-device-pixel-ratio: 2),
@@ -392,6 +392,7 @@ img {
 @media screen and (min-width: 768px) {
   .solutions {
     padding: 112px 0;
+    max-width: 768px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -421,6 +422,7 @@ img {
 @media screen and (min-width: 1158px) {
   .solutions {
     padding: 188px 0;
+    min-width: 1158px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -752,7 +754,8 @@ img {
 }
 
 /*footer*/
-.footer-menu {
+.footer {
+  background-color: #2e2f42;
   padding: 96px 0;
   display: flex;
   background: #2e2f42;
@@ -760,12 +763,15 @@ img {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 72px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100%;
 }
+
 .footer-box {
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 .logo-web {
   font-family: 'Raleway', sans-serif;
@@ -805,7 +811,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 .footer-media {
   font-family: 'Roboto', sans-serif;
@@ -832,9 +838,9 @@ img {
 .elipse:focus {
   background-color: #31d0aa;
 }
-.container-form {
+/* .container-form {
   margin-bottom: 97px;
-}
+} */
 .subscribe-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -892,14 +898,17 @@ img {
   margin-left: 16px;
 }
 @media screen and (min-width: 768px) {
-  .footer-menu {
+  .footer {
     padding: 96px 0;
   }
   .footer-container {
-    justify-content: flex-start;
+    display: flex;
+    padding-left: 108px;
+    align-items: baseline;
+    justify-content: start;
     flex-direction: row;
-    gap: 24px 72px;
-    width: 584px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 
   .footer-media {
@@ -927,7 +936,7 @@ img {
   }
 }
 @media screen and (min-width: 1158px) {
-  .footer-menu {
+  .footer {
     flex-wrap: nowrap;
     padding: 100px 0;
   }
@@ -968,7 +977,6 @@ img {
     color: #fff;
   }
 }
-
 /*modal*/
 
 .modal-overlay {
