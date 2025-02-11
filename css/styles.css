@@ -770,9 +770,6 @@ img {
   height: 100%;
 }
 
-.footer-box {
-  /* margin-bottom: 72px; */
-}
 .logo-web {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -858,21 +855,6 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.input-footer {
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 288px;
-  height: 40px;
-  background: #2e2f42;
-  padding-left: 16px;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: #ffffff;
-  margin-bottom: 16px;
-}
 
 .botton-footer {
   display: flex;
@@ -897,6 +879,31 @@ img {
 .icon-send {
   margin-left: 16px;
 }
+
+.input-footer {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 288px;
+  height: 40px;
+  background: #2e2f42;
+  padding-left: 16px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 288px;
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     padding: 96px 0;
@@ -923,7 +930,6 @@ img {
   .footer-social-link {
     align-items: flex-start;
     justify-content: flex-start;
-    /* margin-bottom: 104px; */
   }
   .subscribe-text {
     text-align: left;
@@ -934,7 +940,18 @@ img {
     flex-direction: row;
     gap: 24px;
   }
+  .input-footer {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    height: 40px;
+    margin-bottom: 0px;
+    width: 264px;
+  }
+  .footer-text {
+    max-width: 264px;
+  }
 }
+
 @media screen and (min-width: 1158px) {
   .footer {
     flex-wrap: nowrap;
@@ -967,11 +984,13 @@ img {
     flex-wrap: nowrap;
     display: flex;
   }
-  .input-footer {
+  /* .input-footer {
     border: 1px solid #fff;
     border-radius: 4px;
     height: 40px;
-  }
+      margin-bottom: 0px;
+          width: 264px;
+  } */
 
   .input-footer::placeholder {
     color: #fff;
