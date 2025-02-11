@@ -67,8 +67,8 @@
           </svg>
         </button>
       </div>
-
-      <div class="mob-menu is-open" data-menu>
+      <!--mobile menu-->
+      <div class="mob-menu" data-menu>
         <div class="container mob-menu-container">
           <button type="button" class="mob-btn-close" data-menu-close>
             <svg width="8" height="8" class="mob-close">
@@ -584,7 +584,7 @@
           </li>
           <li class="link-portfolio">
             <div class="box-overlay">
-              <picture>
+              <!-- <picture>
                 <source
                   srcset="./images/foto7_1x.jpg 1x, ./images/foto7.jpg 2x"
                   media="(min-width: 1158px)"
@@ -601,6 +601,29 @@
                   class="images"
                   src="./images/foto7.jpg"
                   alt="Taxi Service"
+                  width="360"
+                />
+              </picture> -->
+              <picture>
+                <source
+                  srcset="./images/foto7_1x.jpg 1x, ./images/foto7.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="./images/tab-taxi.jpg 1x, ./images/tab-taxi@2x.jpg 2x"
+                  media="(min-width: 758px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobil_taxi.jpg    1x,
+                    ./images/mobil_taxi@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="images"
+                  src="./images/foto7.jpg"
+                  alt="Screen Illustrations"
                   width="360"
                 />
               </picture>
