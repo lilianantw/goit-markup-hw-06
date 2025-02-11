@@ -923,7 +923,7 @@ img {
   .footer-social-link {
     align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 104px;
+    /* margin-bottom: 104px; */
   }
   .subscribe-text {
     text-align: left;
